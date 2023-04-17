@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --DarkBlueintro: hsl(217, 28%, 15%);
+  --DarkBluemainbackground: hsl(218, 28%, 13%);
+  --DarkBluefooterbackground: hsl(216, 53%, 9%);
+  --DarkBluetestimonialsbackground: hsl(219, 30%, 18%);
+  --Cyan: hsl(176, 68%, 64%);
+  --Blue: hsl(198, 60%, 50%);
+  --LightRed: hsl(0, 100%, 63%);
+  --White: hsl(0, 0%, 100%);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Raleway", sans-serif;
+  color: white;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+li {
+  cursor: pointer;
+}
+
+.black_shadow {
+  box-shadow: rgba(0, 0, 0, 0.1) 8px 8px, rgba(0, 0, 0, 0.05) 16px 16px;
+}
+
+.white_shadow {
+  box-shadow: rgba(255, 255, 255, 0.009) 6px 6px,
+    rgba(255, 255, 255, 0.006) 16px 16px;
+}
+
+@media (max-width: 767px) {
+  .bg_hero-color {
+    background: -webkit-linear-gradient(
+      bottom,
+      hsl(218, 28%, 13%) 23%,
+      hsl(217, 28%, 15%) 20%
+    );
+  }
+}
+
+@media (max-width: 639px) {
+  .bg_hero-color {
+    background: -webkit-linear-gradient(
+      bottom,
+      hsl(218, 28%, 13%) 52%,
+      hsl(217, 28%, 15%) 20%
+    );
+  }
+}
